@@ -1,0 +1,132 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+header {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 80px
+}
+
+nav img {
+    width: 1.1em;
+    margin-right: 6px;
+}
+
+.phone {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    color: #81127A;
+}
+
+.logoHeader {
+    width: 6em;
+    height: 8em;
+    object-fit: contain;
+}
+
+#introduction {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#atencion {
+    width: 28em;
+}
+
+#atencion h2 {
+    font-size: 2.5em;
+    color: #81127A;
+    font-weight: lighter;
+}
+
+#atencion p {
+    color: #615D5D;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#atencion a {
+    text-decoration: none;
+    color: white;
+    background-color: #81127A;
+    border-radius: 30px;
+    padding: 1.1em;
+    font-size: 1.2em;
+}
+
+#ilustracion img {
+    width: 35em;
+}
+
+#servicesIntro{
+    margin-top: 7em;
+    margin-bottom: 15em;
+}
+
+#servicesIntro h2 {
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: lighter;
+}
+
+#servicesIntro h2::after {
+    content: '';
+    display: block;
+    width: 220px;
+    border-radius: 90px;
+    height: 4px;
+    background-color: #81127A;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5em;
+    justify-content: space-evenly;
+}
+
+.servicio{
+    width: 300px;
+    background-color: #ECECEC;
+    border: 1px solid #81127A;
+    height: 500px;
+}
+
+.servicio img{
+    width: 301px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    height: 500px;
+}
+
+.servicio h4, p{
+    padding: 15px;
+    line-height: 1.4em;
+}
