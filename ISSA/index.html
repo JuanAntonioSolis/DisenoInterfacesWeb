@@ -16,8 +16,8 @@
         <nav>
             <ul>
                 <li><a href="./index.html" class="active">Inicio</a></li>
-                <li><a href="">Quiénes Somos</a></li>
-                <li><a href="">Servicios</a></li>
+                <li><a href="./quienesSomos.html">Quiénes Somos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
 
                 <li class="phone"><img src="./images/telephone.png" alt=""><a href="">690 11 66 91</a></li>
 
@@ -109,39 +109,41 @@
 
 
     <section id="formIndex">
-        <h2>¿Tienes dudas sobre el servicio?</h2>
-        <div>
-            <form action="">
-                <h2>Envíanos tus datos y contactamos contigo</h2>
-                
-                <label for="name">Nombre y apellidos</label>
-                <input type="text" id="name">
+        <h2 class="encabezadoSection">¿Tienes dudas sobre el servicio?</h2>
+        <div id="forms">
+            <div>
+                <form>
+                    <h2>Envíanos tus datos y contactamos contigo</h2>
 
-                <label for="tel">Teléfono</label>
-                <input type="tel" id="tel">
+                    <label for="name">Nombre y apellidos</label>
+                    <input type="text" id="name">
 
-                <label for="cp">Municipio</label>
-                <input type="text" id="cp">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="tel">
 
-                <label for="ayuda">¿Cómo te podemos ayudar?</label>
-                <select name="ayuda" id="ayuda">
-                    <option value="necesitoCuidado">Necesito Cuidador/a</option>
-                    <option value="trabajo">Busco trabajo</option>
-                </select>
+                    <label for="cp">Municipio</label>
+                    <input type="text" id="cp">
 
-                <input type="button" value="Enviar">
-            </form>
-        </div>
-        <div>
-            <h2>Llámanos al 690 11 66 91</h2>
-            <p>Estamos disponibles los 365 días del año</p>
-            <ul>
-                <li>Lunes a viernes de 8h a 20h</li>
-                <li>Fines de semana y festivos de 9h a 14h</li>
-            </ul>
-            <p>Explícanos tu caso y te asesoraremos sin compromiso</p>
+                    <label for="ayuda">¿Cómo te podemos ayudar?</label>
+                    <select name="ayuda" id="ayuda">
+                        <option value="necesitoCuidado">Necesito Cuidador/a</option>
+                        <option value="trabajo">Busco trabajo</option>
+                    </select>
 
-        
+                    <button id="botonForm">Enviar</button>
+                </form>
+            </div>
+            <div id="llamanos">
+                <h2>Llámanos al 690 11 66 91</h2>
+                <p>Estamos disponibles los 365 días del año</p>
+                <ul>
+                    <li>Lunes a viernes de 8h a 20h</li>
+                    <li>Fines de semana y festivos de 9h a 14h</li>
+                </ul>
+                <p>Explícanos tu caso y te asesoraremos sin compromiso</p>
+
+
+            </div>
         </div>
     </section>
 
