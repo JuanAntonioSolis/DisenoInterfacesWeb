@@ -1,0 +1,248 @@
+#icono img {
+    width: 50px;
+}
+
+#icono{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+}
+
+#boton{
+    margin-top: 40px;
+}
+
+#botonIndex{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(18, 138, 44);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+#botonIndex:hover{
+    font-weight: bolder;
+    background-color: white;
+    border: 1px solid rgb(18, 138, 44);
+    color: rgb(18, 138, 44);
+}
+
+h1{
+    margin-top: 60px;
+}
+
+#primeraBox {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 22em;
+    transition: 1s linear;
+}
+
+#primeraBox:hover {
+    transform: scale(0.7);
+}
+
+#segundaBox {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(255, 0, 43);
+    padding: 10px;
+    margin-top: 10px;
+    text-align: left;
+    width: 22em;
+    transition: background-color 1s linear;
+}
+
+#segundaBox:hover {
+    background-color: beige;
+}
+
+#terceraBox {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(30, 187, 30);
+    padding: 10px;
+    margin-top: 10px;
+    text-align: right;
+    width: 22em;
+    transition: box-shadow 1s linear;
+}
+
+#terceraBox:hover {
+    box-shadow: 5px 2px 5px 2px black;
+}
+
+#cuartaBox {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(117, 5, 121);
+    padding: 10px;
+    margin-top: 10px;
+    text-align: justify;
+    width: 22em;
+    transition: 1s linear;
+}
+
+#cuartaBox:hover {
+    margin-top: 40px;
+}
+
+#mq-1 {
+    border: 1px solid red;
+    width: 50%;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+#mq-2 {
+    border: 1px solid red;
+    width: 80%;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+#mq-3 {
+    border: 1px solid red;
+    width: 20%;
+    padding: 2.5em;
+    margin-top: 2em;
+}
+
+#mq-4 {
+    border: 1px solid red;
+    width: 100%;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+@media screen and (max-width:600px) {
+    #mq-1 {
+        border: 1px solid red;
+        background-color: red;
+        width: 100%;
+        padding: 2.5em;
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    #mq-2 {
+        border: 1px solid red;
+        float: inline-end;
+
+        background-color: chocolate;
+        width: 20%;
+        padding: 1.5em;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #mq-3 {
+        border: 1px solid red;
+        background-color: aquamarine;
+        width: 50%;
+        padding: 2em;
+
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #mq-4 {
+        border: 1px solid red;
+        background-color: burlywood;
+        width: 80%;
+        padding: 1em;   
+
+    }
+}
+
+
+
+
+#maquetGrid {
+    display: grid;
+    grid-template-areas: "caja1 caja1 caja1 caja1"
+        "caja2 caja3 caja4 caja5"
+        "caja6 caja7 caja8 caja9"
+        "caja10 caja10 caja10 caja10";
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+}
+
+#caja1 {
+    border: 1px solid black;
+    margin-top: 20px;
+    grid-area: caja1;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja2 {
+    grid-area: caja2;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja3 {
+    grid-area: caja3;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja4 {
+    grid-area: caja4;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja5 {
+    grid-area: caja5;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja6 {
+    grid-area: caja6;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja7 {
+    grid-area: caja7;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja8 {
+    grid-area: caja8;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja9 {
+    grid-area: caja9;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
+
+#caja10 {
+    grid-area: caja10;
+    border: 1px solid black;
+    padding: 1.5em;
+    overflow: auto;
+}
