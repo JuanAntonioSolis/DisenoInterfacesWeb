@@ -77,6 +77,13 @@ nav a {
     font-size: 1.2em;
 }
 
+#atencion a:hover {
+    width: 6em;
+    height: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
 #ilustracion img {
     width: 35em;
 }
@@ -251,7 +258,7 @@ p {
     margin-bottom: 1.5em;
 }
 
-#forms form h2{
+#forms form h2 {
     font-size: 2em;
 }
 
@@ -283,16 +290,17 @@ p {
     margin-top: 30px;
 }
 
-#llamanos ul li{
-    list-style-type:circle;
+#llamanos ul li {
+    list-style-type: circle;
 }
 
-#llamanos{
+#llamanos {
     height: 18em;
 }
 
-#llamanos h2{
+#llamanos h2 {
     font-size: 2em;
+    text-align: center;
 }
 
 
@@ -333,14 +341,15 @@ footer div {
     margin-right: auto;
 }
 
-#qSomos{
+#qSomos {
     display: flex;
     width: 80%;
     margin: 0 auto;
     gap: 10em;
+    margin-bottom: 5em;
 }
 
-#textoSomos{
+#textoSomos {
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -348,25 +357,25 @@ footer div {
     padding-top: 10em;
 }
 
-#textoSomos span{
+#textoSomos span {
     color: #81127A;
     font-weight: bold;
 }
 
-#textoSomos img{
+#textoSomos img {
     width: 5em;
 }
 
-#textoSomos h2{
+#textoSomos h2 {
     font-size: 2.8em;
     font-weight: lighter;
 }
 
-#textoSomos p{
+#textoSomos p {
     line-height: 2.5em;
 }
 
-#textoSomos h2::after{
+#textoSomos h2::after {
     content: '';
     display: block;
     width: 220px;
@@ -378,12 +387,113 @@ footer div {
     margin-right: auto;
 }
 
-#san{
+#san {
     width: 35em;
     border-top-left-radius: 550px;
     border-top-right-radius: 550px;
-    
+
 }
+
+#elegir {
+    margin-top: 5em;
+    margin-bottom: 7em;
+    background-color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#elegir h2 {
+    font-size: 2.8em;
+    font-weight: lighter;
+}
+
+#elegir h2::after {
+    content: '';
+    display: block;
+    width: 220px;
+    border-radius: 90px;
+    height: 4px;
+    background-color: #81127A;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#elegir p {
+    padding: 3em;
+    font-size: 1.3em;
+    line-height: 2.5em;
+}
+
+#elegir a {
+    text-decoration: none;
+    color: white;
+    background-color: #81127A;
+    border-radius: 20px;
+    padding: 1.1em;
+    font-size: 1.2em;
+    margin-bottom: 3em;
+}
+
+#elegir a:hover {
+    width: 6em;
+    height: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#introServ{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#imgServ img{
+    width: 35em;
+}
+
+#sCuidados{
+    width: 28em;
+}
+
+#sCuidados h2{
+    font-size: 2.5em;
+    color: #81127A;
+    font-weight: lighter;
+}
+
+#sCuidados p{
+    color: #615D5D;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#sCuidados a{
+    text-decoration: none;
+    color: white;
+    background-color: #81127A;
+    border-radius: 20px;
+    padding: 1.1em;
+    font-size: 1.2em;
+}
+
+#sCuidados a:hover{
+    width: 6em;
+    height: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
 
 footer div {
     color: white;
