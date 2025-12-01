@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sin clases</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- NAVBAR -->
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0"> <a href="index.html"
+                    class="d-inline-flex link-body-emphasis text-decoration-none"> <img src="./imgs/DibujoP.png"
+                        width="50" height="50"></a> </div>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2">Servicios</a>
+                </li>
+                <li><a href="##" class="nav-link px-2">Novedades</a>
+                </li>
+                <li><a href="#" class="nav-link px-2">Contacto</a>
+                </li>
+            </ul>
+
+        </header>
+
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <div>
+                <h2 class="d-flex justify-content-center">Servicios</h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <article class="card col">
+                        <img class="card-img-top" src="./imgs/enfermera-vendando-el-brazo-del-paciente.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Servicio 1</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio animi
+                                veniam consectetur,
+                                neque sed blanditiis pariatur! Aperiam ea architecto quos. Hic placeat, magnam
+                                architecto
+                                eum nemo commodi consequatur provident voluptas.</p>
+                        </div>
+                    </article>
+
+                    <article class="card col">
+                        <img class="card-img-top" src="./imgs/anciano-atendido-por-una-cuidadora.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Servicio 2</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+                                delectus quibusdam
+                                similique dolore, eum modi iusto eligendi dolorem? Vero sequi autem neque,
+                                necessitatibus non iure minus earum nostrum aliquam natus?</p>
+                        </div>
+                    </article>
+
+                    <article class="card col">
+                        <img class="card-img-top" src="./imgs/manos-que-se-sostienen-para-apoyarse.jpg" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Servicio 3</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                doloribus dolorum ratione voluptatibus incidunt repudiandae excepturi officia quia.
+                                Consequuntur laboriosam vero amet itaque nulla voluptatum quidem velit quas, rem
+                                distinctio.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOVEDADES -->
+        <section id="novedades">
+            <div class="mt-5">
+                <h2 class="d-flex justify-content-center">Novedades</h2>
+
+                <div class="carousel slide" id="miCarrusel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100"
+                                src="./imgs/persona-invalida-de-primer-plano-en-silla-de-ruedas.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./imgs/pasillo-del-hospital-con-efecto-de-movimiento.jpg"
+                                alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./imgs/voluntario-entregando-una-caja-de-donaciones.jpg"
+                                alt="">
+                        </div>
+
+                        <button class="carousel-control-prev" data-bs-target="#miCarrusel" data-bs-slide="prev"
+                            type="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span></button>
+                        <button class="carousel-control-next" data-bs-target="#miCarrusel" data-bs-slide="next"
+                            type="button"><span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <div class="mt-5">
+                <h2 class="d-flex justify-content-center">Contacto</h2>
+
+                <form class="d-flex flex-wrap row">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text">Nombre</label>
+                        <input class="form-control" type="text" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <label class="input-group-text">Correo</label>
+                        <input class="form-control" type="email" placeholder="email@ejemplo.com">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <label class="input-group-text"> Mensaje</label>
+                        <textarea class="form-textarea" cols="30" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+
+                    <button class="btn btn-dark" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="mt-5 bg-success container-fluid">
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="p-4">
+                <h3>ISSA</h3>
+                <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum eius
+                    aspernatur quis, recusandae omnis accusamus nesciunt. Ducimus pariatur hic, nihil laboriosam
+                    distinctio incidunt, iste, officia maiores sit cumque quos?</p>
+            </div>
+
+            <div class="p-4">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a class="text-decoration-none text-white" href="#">Inicio</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Servicios</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="p-4">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a class="text-decoration-none text-white" href="#">Ayuda</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">FAQ</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Políticas</a></li>
+                </ul>
+            </div>
+
+            <div class="p-4">
+                <h3>Newsletter</h3>
+                <div class="input-group">
+                    <input class="form-control" type="email" placeholder="Tu correo">
+                    <button class="input-group-text">Suscribirme</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
