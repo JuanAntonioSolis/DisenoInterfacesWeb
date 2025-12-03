@@ -13,7 +13,8 @@ header {
 
 nav ul li {
     display: inline-block;
-    padding-right: 80px
+    padding-right: 80px;
+
 }
 
 nav img {
@@ -303,7 +304,6 @@ p {
     text-align: center;
 }
 
-
 footer {
     width: 100%;
     margin: 0 auto;
@@ -447,28 +447,28 @@ footer div {
     font-weight: bold;
 }
 
-#introServ{
+#introServ {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
 }
 
-#imgServ img{
+#imgServ img {
     width: 35em;
 }
 
-#sCuidados{
+#sCuidados {
     width: 28em;
 }
 
-#sCuidados h2{
+#sCuidados h2 {
     font-size: 2.5em;
     color: #81127A;
     font-weight: lighter;
 }
 
-#sCuidados p{
+#sCuidados p {
     color: #615D5D;
     font-weight: bold;
     line-height: 1.5em;
@@ -476,7 +476,7 @@ footer div {
     font-size: 1.2em;
 }
 
-#sCuidados a{
+#sCuidados a {
     text-decoration: none;
     color: white;
     background-color: #81127A;
@@ -485,25 +485,25 @@ footer div {
     font-size: 1.2em;
 }
 
-#sCuidados a:hover{
+#sCuidados a:hover {
     width: 6em;
     height: 1.2em;
     text-align: center;
     font-weight: bold;
 }
 
-#listaServicios{
+#listaServicios {
     margin-bottom: 20em;
 
 }
 
-#listaServicios h2{
+#listaServicios h2 {
     font-size: 2.8em;
     font-weight: lighter;
     text-align: center;
 }
 
-#listaServicios h2::after{
+#listaServicios h2::after {
     content: '';
     display: block;
     width: 220px;
@@ -515,15 +515,15 @@ footer div {
     margin-right: auto;
 }
 
-.phone:hover{
+.phone:hover {
     font-weight: bold;
-    background-color:#ECECEC;
+    background-color: #ECECEC;
 }
 
-#formFinal{
+#formFinal {
     height: 750px;
     padding-top: 2em;
-    
+
 }
 
 #formFinal form {
@@ -553,8 +553,8 @@ footer div {
     margin-top: 2em;
 }
 
-#formFinal h2::after{
-    background-color:#81127A;
+#formFinal h2::after {
+    background-color: #81127A;
 }
 
 
@@ -574,4 +574,352 @@ footer div a {
 #contact span {
     font-weight: bold;
     padding-left: 1em;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 7em;
+    }
+
+    .logoHeader {
+        width: 5em;
+        height: 7em;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    nav img {
+        width: 1.1em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    nav ul li {
+        display: flex;
+        padding-right: none;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        padding: 2px;
+        border: 1px solid white;
+        border-radius: 20px;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1.7em;
+    }
+
+    nav {
+        width: 100%;
+        background-color: #81127A;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .active {
+        color: white;
+        font-weight: bolder;
+    }
+
+    .phone {
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 2px;
+        font-size: 1.1em;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav li:hover {
+        background-color: white;
+        color: #81127A;
+        font-weight: bold;
+    }
+
+    #introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #atencion {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #atencion h2 {
+        font-size: 1.8em;
+        color: #81127A;
+        font-weight: lighter;
+        text-align: center;
+        width: 10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #atencion p {
+        color: #615D5D;
+        font-weight: normal;
+        line-height: 1.5em;
+        padding-bottom: 20px;
+        font-size: 1em;
+        text-align: justify;
+        width: 16em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #atencion a {
+        text-decoration: none;
+        color: white;
+        background-color: #81127A;
+        border-radius: 28px;
+        padding: 1em;
+        font-size: 0.8em;
+        width: 12em;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #atencion a:hover {
+        width: 13em;
+        height: 1.2em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #ilustracion img {
+        width: 12em;
+        margin-top: 2em;
+    }
+
+    #servicesIntro {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    #servicesIntro h2 {
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: lighter;
+        width: 10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #servicesIntro h2::after {
+        content: '';
+        display: block;
+        width: 320px;
+        border-radius: 90px;
+        height: 4px;
+        background-color: #81127A;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        justify-content: space-evenly;
+    }
+
+    .servicio {
+        width: 350px;
+        background-color: #ECECEC;
+        border-radius: 10px;
+        height: 200px;
+        margin-top: 2em;
+    }
+
+    .servicio img {
+        width: 251px;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        height: 400px;
+        display: none;
+    }
+
+    .servicio h4 {
+        text-align: center;
+        background-color: #81127A;
+        height: 20px;
+        color: white;
+        position: static;
+        margin-top: 0;
+        height: 2em;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .servicio h4,
+    p {
+        padding: 10px;
+        line-height: 1.4em;
+    }
+
+    .servicio span {
+        font-weight: bold;
+    }
+
+    #funcionamos {
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+
+    #funcionamos h2 {
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: lighter;
+    }
+
+    #funcionamos h2::after {
+        content: '';
+        display: block;
+        width: 320px;
+        border-radius: 90px;
+        height: 4px;
+        background-color: #81127A;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #proceso {
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .func {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .func img {
+        width: 3em;
+        border: 4px solid #81127A;
+        border-radius: 50%;
+        padding: 1.2em;
+    }
+
+    .func p {
+        font-weight: bolder;
+    }
+
+    .flecha img {
+        width: 5em;
+        padding-top: 20px;
+        display: none;
+    }
+
+    #formIndex {
+        background-color: #81127a70;
+        height: 1200px;
+        padding-top: 2em;
+    }
+
+    .encabezadoSection {
+        font-size: 1.8em;
+    }
+
+    .encabezadoSection::after {
+        width: 320px;
+    }
+
+    #forms {
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #forms div {
+        background-color: #ECECEC;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    #formIndex form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #llamanos {
+        height: 21em;
+    }
+
+    #llamanos h2 {
+        font-size: 1.8em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div h4 {
+        font-size: x-large;
+    }
+
+    #siguenos {
+        display: flex;
+        align-items: start;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #utils {
+        display: flex;
+        align-items: start;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
+
+    #contact {
+        display: flex;
+        align-items: start;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
+
+    #contact p::after {
+        content: '';
+        display: block;
+        width: 280px;
+        border-radius: 90px;
+        height: 1px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
