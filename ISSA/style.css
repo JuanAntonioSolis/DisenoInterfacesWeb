@@ -494,7 +494,6 @@ footer div {
 
 #listaServicios {
     margin-bottom: 20em;
-
 }
 
 #listaServicios h2 {
@@ -601,12 +600,22 @@ footer div a {
         margin-left: auto;
     }
 
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+    }
+
     nav ul li {
         display: flex;
         padding-right: none;
         justify-content: center;
         align-items: center;
-        margin-bottom: 8px;
+        margin-bottom: 18px;
+        margin-top: 18px;
+
         padding: 2px;
         border: 1px solid white;
         border-radius: 20px;
@@ -644,8 +653,12 @@ footer div a {
 
     nav li:hover {
         background-color: white;
-        color: #81127A;
-        font-weight: bold;
+
+        a {
+            color: #81127A;
+            font-weight: bold;
+        }
+
     }
 
     #introduction {
@@ -654,6 +667,7 @@ footer div a {
         justify-content: center;
         justify-content: space-around;
         align-items: center;
+        margin-top: 10em;
     }
 
     #atencion {
@@ -922,4 +936,153 @@ footer div a {
         margin-left: auto;
         margin-right: auto;
     }
+
+    #elegir {
+        margin-top: 13em;
+        margin-bottom: 2em;
+    }
+
+    #elegir h2 {
+        font-size: 1.8em;
+        font-weight: lighter;
+    }
+
+    #elegir p {
+        padding: 2em;
+        font-size: 1em;
+        line-height: 2.5em;
+    }
+
+    #elegir a {
+        text-decoration: none;
+        color: white;
+        background-color: #81127A;
+        border-radius: 20px;
+        padding: 1.1em;
+        font-size: 1.1em;
+        margin-bottom: 3em;
+    }
+
+    #qSomos {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        gap: 10em;
+        margin-bottom: 5em;
+        flex-direction: column;
+    }
+
+    #textoSomos {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10em;
+    }
+
+    #textoSomos span {
+        color: #81127A;
+        font-weight: bold;
+    }
+
+    #textoSomos img {
+        width: 5em;
+    }
+
+    #textoSomos h2 {
+        font-size: 1.8em;
+        font-weight: lighter;
+    }
+
+    #textoSomos p {
+        line-height: 2em;
+    }
+
+    #textoSomos h2::after {
+        content: '';
+        display: block;
+        width: 120px;
+        border-radius: 90px;
+        height: 4px;
+        background-color: #81127A;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #san {
+        width: 25em;
+        border-top-left-radius: 550px;
+        border-top-right-radius: 550px;
+
+    }
+
+    #introServ {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10em;
+    }
+
+    #imgServ img {
+        display: none;
+    }
+
+    #sCuidados {
+        width: 28em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sCuidados h2 {
+        font-size: 1.8em;
+        color: #81127A;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    #sCuidados p {
+        color: #615D5D;
+        font-weight: bold;
+        line-height: 1.5em;
+        padding-bottom: 20px;
+        font-size: 1em;
+    }
+
+    #sCuidados a {
+        text-decoration: none;
+        color: white;
+        background-color: #81127A;
+        border-radius: 20px;
+        padding: 1.1em;
+        font-size: 1em;
+    }
+
+    #sCuidados a:hover {
+        width: 10em;
+        height: 1.1em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #listaServicios h2 {
+        font-size: 1.8em;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    #listaServicios {
+        margin-bottom: 10em;
+    }
+
+    #formFinal {
+        height: 750px;
+        padding-top: 2em;
+        margin-bottom: 25em;
+    }
+
+   
+
 }
