@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISSA Cuidados</title>
+    <link rel="shortcut icon" href="./images/DibujoP.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/DibujoP.png" alt="" class="logoHeader"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./quienesSomos.html">Quiénes Somos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./multimedia.html" class="active">Multimedia</a></li>
+                <li class="phone"><img src="./images/telephone.png" alt=""><a href="./contacto.html">690 11 66 91</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h2 id="headerMultimedia">ELEMENTOS MULTIMEDIA</h2>
+    <div id="elemMulti">
+
+
+        <h3 id="titleImg">Galería de imágenes</h3>
+        <section id="galeria">
+
+            <div class="bg">
+                <h4>Imagen Gratuita</h4>
+                <img src="./images/pexels-matthiaszomer-339620.jpg" alt="Persona Sosteniendo Una Pelota Antiestrés">
+                <p><strong>Fuente: </strong>Pexels</p>
+                <p><strong>Licencia: </strong>Gratuita para uso comercial</p>
+                <p><strong>Autor: </strong>Matthias Zomer</p>
+            </div>
+
+            <div class="bg">
+                <h4>Imagen CC</h4>
+                <img src="./images/50588306156_a8f9f2c856_o.jpg" alt="Flamencos durmiendo">
+                <p><strong>Fuente: </strong>Fickr</p>
+                <p><strong>Licencia: </strong>CC BY 2.0</p>
+                <p><strong>Autor: </strong>Martin Fisch</p>
+                <p><strong>Link: </strong><a href="https://www.flickr.com/photos/marfis75/50588306156/in/pool-cc0/">Ver
+                        Original</a></p>
+            </div>
+
+            <div class="bg">
+                <h4>Imágenes editadas</h4>
+                <div id="edits">
+                    <div>
+                        <p><strong>Original</strong></p>
+                        <img src="./images/florecillas.jpg" alt="Señor mirando flores">
+                    </div>
+
+                    <div>
+                        <p><Strong>Imagen editada</Strong></p>
+                        <img src="./images/florecillasEditada.jpg" alt="Señor mirando flores">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg" id="imgVec">
+                <h4>Imagen vectorial</h4>
+                <div>
+                    <div class="svg-container">
+                        <svg width="200" height="200" viewBox="0 0 200 200" id="svgModificable">
+
+                            <circle cx="100" cy="100" r="80" fill="#81127A" id="circulo1" />
+
+                            <rect x="90" y="60" width="20" height="80" fill="white" id="rect1" />
+                            <rect x="60" y="90" width="80" height="20" fill="white" id="rect2" />
+
+                            <circle cx="100" cy="100" r="30" fill="none" stroke="white" stroke-width="3"
+                                id="circulo2" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <h3>Galería de Audio</h3>
+        <section id="audios">
+            <audio src="" controls>
+            </audio>
+
+            <div id="audioButtons">
+                <button onclick="playAudio();">Play</button>
+                <button onclick="pauseAudio();">Pause</button>
+                <button onclick="nextAudio();">Next</button>
+                <button onclick="prevAudio();">Prev</button>
+            </div>
+
+        </section>
+
+        <h3>Galería de Vídeo</h3>
+        <section>
+            <video src=""></video>
+
+            <div id="videoButtons">
+                <button onclick="playVideo();">Play</button>
+                <button onclick="pauseVideo();">Pause</button>
+                <button onclick="stopVideo();">Stop</button>
+                <button onclick="rewindVideo();">Rewind</button>
+                <button onclick="nextVideo();">Next Video</button>
+                <button onclick="prevVideo();">Previous Video</button>
+
+            </div>
+
+
+        </section>
+
+        <h3>Almacenamiento IndexedDB</h3>
+        <section>
+
+            <div id="cajaFormulario">
+                <div>
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni">
+                </div>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                </div>
+
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos">
+                </div>
+
+                <input type="button" name="grabar" id="grabar" value="Grabar">
+            </div>
+
+        </section>
+
+        <h3>Geolocalización</h3>
+        <section>
+            <button id="geoPrueba">
+                PULSA PARA OBTENER TU GEOLOCALIZACION
+            </button>
+
+            <p id="geoResult">
+
+            </p>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div id="siguenos">
+            <h4>Síguenos</h4>
+            <a href="">
+                <img src="./images/instagram.png" alt="">
+                Instagram
+            </a>
+            <a href="">
+                <img src="./images/facebook.png" alt="">
+                Facebook
+            </a><a href="">
+                <img src="./images/twitter.png" alt="">
+                X
+            </a><a href="">
+                <img src="./images/linkedin.png" alt="">
+                Linkedin
+            </a>
+        </div>
+
+        <div id="utils">
+            <h4>Páginas de utilidad</h4>
+            <a href="">
+                Guía de estilos
+            </a>
+            <a href="">
+                Mapa web
+            </a>
+            <a href="">
+                Licencias
+            </a>
+        </div>
+
+        <div id="contact">
+            <h4>Contacta con nosotros</h4>
+            <p>
+                <img src="./images/location.png" alt="">
+
+                <span>Calle Carril Nº51 1ºA Huércal-Overa, 04600 Almería</span>
+            </p>
+
+            <p>
+                <img src="./images/mail.png" alt="">
+                <span>jsolcor457@g.educaand.es</span>
+            </p>
+
+            <p>
+                <img src="./images/telephoneWhite.png" alt="">
+                <span>690 11 66 91</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+
+        const audios = [
+            { src: './audio/audio1.mp3' },
+            { src: './audio/audio2.mp3' },
+            { src: './audio/audio3.mp3' }
+        ];
+
+        const videos = [
+            { src: './video/video1.mp4' },
+            { src: './video/video2.mp4' }
+        ];
+
+        let pos = 0;
+
+        const theAudio = document.querySelector("audio");
+
+        const actVideo = document.querySelector("video");
+
+        theAudio.setAttribute("src", audios[pos].src);
+        actVideo.setAttribute("src", videos[pos].src);
+
+
+        //Funciones Audios
+        function playAudio() {
+            theAudio.play();
+        }
+
+        function pauseAudio() {
+            theAudio.pause();
+        }
+
+        function nextAudio() {
+            pos = (pos + 1) % audios.length;
+
+            theAudio.setAttribute("src", audios[pos].src);
+
+            theAudio.play();
+        }
+
+        function prevAudio() {
+            pos = (pos - 1 + audios.length) % audios.length;
+
+            theAudio.setAttribute("src", audios[pos].src);
+
+            theAudio.play();
+        }
+
+        //Funciones Videos
+        function playVideo() {
+            actVideo.play();
+        }
+
+        function pauseVideo() {
+            actVideo.pause();
+        }
+
+        function stopVideo() {
+            actVideo.currentTime = 0;
+            actVideo.pause();
+        }
+
+        function rewindVideo() {
+            actVideo.currentTime = 0;
+        }
+
+        function nextVideo() {
+            pos = (pos + 1) % videos.length;
+
+            actVideo.setAttribute("src", videos[pos].src);
+
+            actVideo.play();
+        }
+
+        function prevVideo() {
+            pos = (pos - 1 + videos.length) % videos.length;
+
+            actVideo.setAttribute("src", videos[pos].src);
+
+            actVideo.play();
+        }
+
+
+        window.addEventListener("load", iniciar, false);
+        let bd;
+
+        function iniciar() {
+            let btn = document.querySelector("#grabar");
+
+
+
+            let solicitud = indexedDB.open("miBase");
+
+            solicitud.onsuccess = function (e) {
+                bd = e.target.result;
+
+                btn.addEventListener("click", agregarObjeto, false);
+            }
+
+            solicitud.onupgradeneeded = function (e) {
+                bd = e.target.result;
+
+                bd.createObjectStore("gente", { keyPath: "dni" });
+            }
+
+
+        }
+
+
+
+        function agregarObjeto() {
+            let dni = document.querySelector("#dni");
+            let nombre = document.querySelector("#nombre");
+            let apellidos = document.querySelector("#apellidos");
+
+            let transaccion = bd.transaction(["gente"], "readwrite");
+
+            let almacen = transaccion.objectStore("gente");
+
+            let peticion = almacen.add({ dni: dni.value, nombre: nombre.value, apellidos: apellidos.value });
+
+            peticion.onsuccess = function () {
+                alert("Registro añadido correctamente");
+            }
+
+            peticion.onerror = function () {
+                alert("Error: ese teléfono ya existe en la base de datos");
+            }
+
+            dni.value = "";
+            nombre.value = "";
+            apellidos.value = "";
+        }
+
+
+        //GEOLOCALIZACION
+
+        let x = document.querySelector("#geoResult");
+        let geoBtn = document.querySelector("#geoPrueba");
+
+        geoBtn.addEventListener("click",getLocation,false);
+
+        function getLocation(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.textContent = "Geolocalización no es soportada por este navegador";
+            }
+        }
+
+        function showPosition(position){
+            x.textContent = "Latitud: " + position.coords.latitude + " Longitud: " + position.coords.longitude
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

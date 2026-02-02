@@ -263,7 +263,7 @@ p {
     font-size: 2em;
 }
 
-#botonForm {
+.botonForm {
     border-radius: 5px;
     background-color: #81127A;
     color: white;
@@ -272,9 +272,15 @@ p {
     border: none;
 }
 
-#botonForm:hover {
+.botonForm:hover {
     color: #81127A;
     background-color: white;
+}
+
+#botonDB {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #llamanos h2 {
@@ -308,7 +314,7 @@ footer {
     width: 100%;
     margin: 0 auto;
     background-color: #81127A;
-
+    margin-top: 3em;
     display: flex;
     justify-content: space-around;
     padding-top: 4em;
@@ -572,6 +578,164 @@ footer div a {
 #contact span {
     font-weight: bold;
     padding-left: 1em;
+}
+
+#headerMultimedia {
+    text-align: center;
+    color: #81127A;
+    font-size: 2em;
+}
+
+#elemMulti {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#galeria img {
+    width: 500px;
+
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    justify-content: center;
+    gap: 2em;
+}
+
+#galeria h4 {
+    color: #81127A;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#galeria p {
+    line-height: 0.1em;
+}
+
+#titleImg {
+    width: 100%;
+    text-align: center;
+}
+
+#edits {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+#edits img {
+    width: 200px;
+
+}
+
+.svg-container {
+    text-align: center;
+}
+
+.bg {
+    background-color: #ECECEC;
+    border-radius: 15px;
+    padding: 6px 16px;
+}
+
+#audioButtons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+#audioButtons button {
+    background-color: #81127A;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 16px;
+    border: 0;
+    transition: .3s ease all;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #460541;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.267);
+    }
+}
+
+video {
+    width: 480px;
+    height: 320px;
+}
+
+#videoButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-top: 2em;
+    gap: 2em;
+}
+
+#videoButtons button {
+    background-color: #81127A;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 16px;
+    border: 0;
+    transition: .3s ease all;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #460541;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.267);
+    }
+}
+
+#cajaFormulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#cajaFormulario div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#cajaFormulario input {
+    background-color: #ECECEC;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+#grabar {
+    font-weight: bold;
+    border: none;
+    transition: .3s ease all;
+
+    &:hover {
+        background-color: #81127A;
+        color: white;
+    }
+}
+
+#geoPrueba {
+    font-weight: bold;
+    border: none;
+    transition: .3s ease all;
+    padding: 6px 16px;
+    background-color: grey;
+    border-radius: 16px;
+    color: white;
+    &:hover {
+        background-color: #81127A;
+        color: white;
+    }
 }
 
 @media (max-width: 480px) {

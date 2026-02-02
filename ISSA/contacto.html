@@ -17,9 +17,10 @@
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./quienesSomos.html">Quiénes Somos</a></li>
-                <li><a href="./servicios.html" >Servicios</a></li>
-
-                <li class="phone"><img src="./images/telephone.png" alt=""><a href="./contacto.html" class="active">690 11 66 91</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./multimedia.html">Multimedia</a></li>
+                <li class="phone"><img src="./images/telephone.png" alt=""><a href="./contacto.html" class="active">690
+                        11 66 91</a></li>
 
             </ul>
         </nav>
@@ -36,7 +37,7 @@
                     <input type="text" id="name">
 
                     <label for="tel">Teléfono</label>
-                    <input type="tel" id="tel">
+                    <input type="text" id="tel">
 
                     <label for="cp">Municipio</label>
                     <input type="text" id="cp">
@@ -47,9 +48,10 @@
                         <option value="trabajo">Busco trabajo</option>
                     </select>
 
-                    <button id="botonForm">Enviar</button>
+                    <button id="botonForm" class="botonForm">Enviar</button>
                 </form>
             </div>
+
             <div id="llamanos">
                 <h2>Llámanos al 690 11 66 91</h2>
                 <p>Estamos disponibles los 365 días del año</p>
@@ -94,7 +96,7 @@
             <a href="">
                 Mapa web
             </a>
-            <a href=""> 
+            <a href="">
                 Licencias
             </a>
         </div>
@@ -118,6 +120,66 @@
             </p>
         </div>
     </footer>
+
+    <script>
+
+        
+
+        let bd;
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            let btn = document.querySelector("#botonForm");
+
+            
+
+            let solicitud = indexedDB.open("miBase");
+
+            solicitud.onsuccess = function (e) {
+                bd = e.target.result;
+
+                btn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    agregarObjeto();
+                });
+            }
+
+            solicitud.onupgradeneeded = function (e) {
+                bd = e.target.result;
+
+                bd.createObjectStore("gente", { keyPath: "tel" });
+            }
+
+            
+
+        });
+
+        function agregarObjeto() {
+            let name = document.querySelector("#name");
+            let tel = document.querySelector("#tel");
+            let cp = document.querySelector("#cp");
+
+            let transaccion = bd.transaction(["gente"], "readwrite");
+
+            let almacen = transaccion.objectStore("gente");
+
+            let peticion = almacen.add({ tel: tel.value, nombre: name.value, CodPostal: cp.value });
+
+            peticion.onsuccess = function () {
+                alert("Registro añadido correctamente");
+            }
+
+            peticion.onerror = function () {
+                alert("Error: ese teléfono ya existe en la base de datos");
+            }
+
+            name.value = "";
+            tel.value = "";
+            cp.value = "";
+        }
+
+
+    </script>
 
 </body>
 
