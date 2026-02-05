@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,13 @@
 </head>
 
 <body>
+
+    <noscript>
+        <div style="background: #fff3cd; padding: 15px; text-align: center; border: 2px solid #856404;">
+            <strong>Aviso:</strong> Esta página funciona mejor con JavaScript habilitado,
+            pero puedes navegar sin problemas. Los formularios siguen funcionando.
+        </div>
+    </noscript>
 
     <div class="container">
 
@@ -34,7 +41,7 @@
                             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                                 <ul class="navbar-nav align-items-center gap-4">
                                     <li class="nav-item">
-                                        <a href="./index.html" class="nav-link text-dark">Inicio</a>
+                                        <a href="./index.html" class="nav-link text-dark" accesskey="1">Inicio</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="./quienesSomos.html" class="nav-link text-dark">Quiénes
@@ -61,7 +68,7 @@
 
         <section class="mt-5 py-5">
             <div class="container">
-                <h2 class="display-5 text-center px-5 fw-medium">Solicita nuestros servicios</h2>
+                <h1 class="display-5 text-center px-5 fw-medium">Solicita nuestros servicios</h1>
                 <div class="mx-auto my-3"
                     style="width: 180px; height: 4px; background-color: #a02ca0; border-radius: 20px;"></div>
 
@@ -84,6 +91,18 @@
                                 <option value="necesitoCuidado">Necesito Cuidador/a</option>
                                 <option value="trabajo">Busco trabajo</option>
                             </select>
+
+                            <div class="my-3">
+                                <label for="captcha-question" class="form-label">
+                                    Pregunta de seguridad: ¿Cuánto es 5 + 3?
+                                    <span class="required-indicator" aria-label="obligatorio">*</span>
+                                </label>
+                                <input type="text" id="captcha-question" name="captcha" class="form-control" required
+                                    aria-required="true" aria-describedby="captcha-help">
+                                <small id="captcha-help" class="form-text">
+                                    Introduce el resultado de la suma para verificar que no eres un robot
+                                </small>
+                            </div>
 
                             <button class="btn btn-danger my-3">Enviar</button>
                         </form>
@@ -175,5 +194,7 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+
+
 
 </html>
